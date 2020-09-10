@@ -1,11 +1,16 @@
 import React from 'react'
-import Result from './Result'
+
 
 function Results({results}) {
     return (
         <section className='results'>
             {results.map(result=>(
-                <Result key={result.imdbID} result={result}/>
+                
+                <div className='result'>
+                    <img src={result.Poster}/>
+                    <h1 className='movie'>{result.Title}</h1>
+            
+                </div>
             ))}
         </section>
     )
