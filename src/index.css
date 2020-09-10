@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color:darkcyan;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.title{
+  color: aliceblue;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+main{
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.searchbox{
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #EEE;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #535658;
+  font-weight: 300;
+  transition: 0.4s ease-out;
+}
+
+.movie{
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color:#EEE;
+  padding: 10px;
+  text-align: center;
+  transition: 0.4s ease-out;
+  background: #445465;
+}
+
+.movie:hover{
+  cursor: pointer;
+  background: #fff;
+  color: #223343;
+}
+
+.results{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  justify-content: space-around;
+}
+
+.results .result{
+  width: 25.333%;
+  min-width: 280px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.results .result img{
+  display: block;
+  width: 100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.results .result img:hover{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+
